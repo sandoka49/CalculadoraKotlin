@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/expressao"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:textColor="@color/design_default_color_error"
+    android:gravity="end"
+    android:textSize="35sp"
+    android:layout_marginEnd="10dp"
+    android:singleLine="true"
+    android:ellipsize="start"
+    android:layout_marginRight="10dp" />
+<TextView
+    android:id="@+id/resultado"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:textColor="@color/black"
+    android:textSize="40sp"
+    android:layout_marginEnd="10dp"
+    android:gravity="end"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:layout_marginRight="10dp" />
+    <TextView
+        android:id="@+id/textMake"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="20dp"
+        android:text="@string/made_by_sandoval"
+        android:textColor="@color/purple_700"
+        android:gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/limpar"
+            style="@style/Operator_Button"
+            android:layout_width="98dp"
+                       android:text="@string/c" />
+
+        <TextView
+            android:id="@+id/divisao"
+            style="@style/Operator_Button"
+            android:layout_width="98dp"
+                      android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numero_sete"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/numero_oito"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/numero_nove"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="9" />
+
+        <TextView
+            android:id="@+id/multiplicacao"
+            style="@style/Operator_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="x" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numero_quatro"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/numero_cinco"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/numero_seis"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="6" />
+        <TextView
+            android:id="@+id/subtracao"
+            style="@style/Operator_Button"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numero_um"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/numero_dois"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/numero_treis"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:text="3" />
+        <TextView
+            android:id="@+id/somar"
+            style="@style/Operator_Button"
+            android:layout_width="98dp"
+            android:text="+" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ponto"
+            style="@style/Numbers_Button"
+            android:layout_width="95dp"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/numero_zero"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/backspace"
+            style="@style/Numbers_Button"
+            android:layout_width="98dp"
+            android:src="@drawable/backspace"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/igual"
+            style="@style/Operator_Button"
+            android:layout_width="98dp"
+            android:text="=" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
